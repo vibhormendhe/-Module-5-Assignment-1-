@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "93b6f658-430f-4039-8f98-ec5b0bd6d23c",
+		"name": "m5a1_testing_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23227777"
+	},
+	"item": [
+		{
+			"name": "test_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "ngoel16@asu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Nikita Goel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "ngoel16@asu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/sign_in",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5nb2VsMTZAYXN1LmVkdSIsImZ1bGxOYW1lIjoiTmlraXRhIEdvZWwiLCJfaWQiOiI2MzVhZmNjYjU2NGMyYzFhMGZhNTYzN2YiLCJpYXQiOjE2NjY5MTY4OTJ9.brLWm9ZLAV8E4qNpuTLDVc0QXK_GJzFHuDLncXLrXWU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "ngoel16@asu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "checking in",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "5dbe9503-7ec8-4ee7-b8a1-1f0d73efa1dc",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23227624"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "vmendhe@asu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Vibhor Mendhe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_sign_in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "vmendhe@asu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/sign_in",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JWT_token test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZtZW5kaGVAYXN1LmVkdSIsImZ1bGxOYW1lIjoiVmliaG9yIE1lbmRoZSIsIl9pZCI6IjYzNWI1ZjM2ZjgyMzQ0NGU4OTg0OTIyMSIsImlhdCI6MTY2NjkzMjk5N30.bqf5ryCTtOwtdS_YFv-4ISTU-PAZW4e51SbntYszDSM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "vmendhe@asu.edu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "testing in",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
